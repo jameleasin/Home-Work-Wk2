@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <title>About Me</title>
+    <!--Seperate CSS-->
     <link rel="stylesheet" type="text/css" href="./assets/styles.css">
+    <!--Bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--JS components-->
@@ -23,18 +25,15 @@
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-
         <!-- Our brand / logo -->
         <a class="navbar-brand" href="#">Jamelea Sinclair</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-
         <!-- Collapsible button -->
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ml-auto">
-
                 <!-- The links of our navbar -->
                 <li class="nav-item active">
                     <a class="nav-link" href="index.html">About Me <span class="sr-only">(current)</span></a>
@@ -52,44 +51,40 @@
     </nav>
     <div class="container">
         <div class="jumbotron">
-            <div class="col 2">
-                <div class="row">
+            <div class="row">
+                <div class="col-md-4">
                     <h1 class="display-4">About Me</h1>
                 </div>
-                <div class="row">
-
-                    <div class="media">
-                        <img src="./assets/images/me.jpg" class="align-self-start mr-3" alt="Jamelea Sinclair"
-                            widht="200px" height="250px">
-                        <div class="media-body">
-                           <p> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
-                            Cras
-                            purus
-                            odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
-                            vulputate
-                            fringilla. Donec lacinia congue felis in faucibus.
-                            </p>
-                            <p>
-                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
-                            Cras
-                            purus
-                            odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
-                            vulputate
-                            fringilla. Donec lacinia congue felis in faucibus.
-                            </p>
-                        </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="float-left pl-3 pb-3">
+                        <img src="./assets/images/me.jpg" class="align-self-start mr-3 image-fluid"
+                            alt="Jamelea Sinclair" height="250px">
                     </div>
+                    <p> My name is Jamie. Ive dabbled in code for most of my life, completing a Certificate IV
+                        in Multimedia Design and I.T with a programming stream in 2013.
+                        Since then I have persude my love of animal health completing my Certificate IV in
+                        veterinary Nursing in 2017.
+                        I have moved from GP work to ECC work and have enjoyed learning in a more critical role.
+                        <br />
+                        I have decided to move back into a more creative space for work and have fallen back into
+                        programming with ease.
+                        I am very excited to learn all the new languages that have come about since 2013 and to
+                        really take my programming skills to the next level.
+                        I enjoy the front end design aspect of web development, making things asthetically pleasing
+                        and creating more interactive web applications.
+                    </p>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col 2">
-                <div class="footer sticky-bottom">
+            <div class="col-lg-12">
+                <div class="footer">
                     &copy; 2020 | Jamelea Sinclair
                 </div>
             </div>
         </div>
-    </div>
 </body>
 
 </html>
