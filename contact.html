@@ -21,6 +21,8 @@
         crossorigin="anonymous"></script>
     <!--Google Fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+    <!--Font Awesome for favicons (social media icons)-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
 </head>
 
 <body>
@@ -51,8 +53,8 @@
     </section>
     </navigation>
     <!--container-fluid used to ensure the content of the page is responsivewhen screens pixels are adjusted-->
-    <div class="container-fluid">
-        <!--Individual row & column for the h1 title, col-12 takes up the entirety of the container-->
+    <div class="container container-fluid">
+        <!--Individual row & column for the h1 title, col-12 takes up the entirety of the container, columns wont stack when screen is smaller-->
         <div class="row">
             <div class="col-lg-12">
                 <section class="header">
@@ -89,16 +91,35 @@
                     </div>
                 </section>
             </div>
-        </div>
-        <!--semantic html: footer indicates the footer of the page, where in this case copyright info is kept-->
-        <section class="footer">
-            <div class="row">
-                <!--col-12 used so the footer takes up the entirety of that row-->
-                <div class="col-lg-12">
-                    &copy; 2020 | Jamelea Sinclair
-                </div>
-            </div>
         </section>
+    </div>
+    </div>
+    <!--semantic html: footer indicates the footer of the page, where in this case copyright info is kept-->
+    <footer class="footer">
+        <div class="row">
+            <!--col-4 used to put each column into equal parts-->
+            <div class="col-4">
+            </div>
+            <div class="col-lg-4">
+                &copy; 2020 | Jamelea Sinclair
+            </div>
+            <div class="col-4">
+                <!--social media links using Awesome fonts-->
+                <a class="btn" href="https://www.facebook.com/Jaymesinn" target = "_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a class="btn" href="https://www.instagram.com/jayme_draws/?hl=en" target = "_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a class="btn" href="https://github.com/jameleasin" target = "_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a class="btn" href="https://www.linkedin.com/in/jamelea-sinclair-78137871/" target = "_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
     </div>
 </body>
 

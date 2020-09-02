@@ -21,6 +21,8 @@
         crossorigin="anonymous"></script>
     <!--Google Fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+    <!--Font Awesome for favicons (social media icons)-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
 </head>
 
 <body>
@@ -50,17 +52,18 @@
             </div>
         </nav>
     </section>
-    <!--container-fluid used to ensure the content of the page is responsivewhen screens pixels are adjusted-->
-    <div class="container-fluid">
-        <header>
-            <!--Individual row & column for the h1 title, col-12 takes up the entirety of the container-->
+    <!--sementic html: container-fluid used to ensure the content of the page is responsivewhen screens pixels are adjusted-->
+    <section class="container container-fluid">
+        <!--Semantic HTML to indicate the header of the page-->
+        <section class="header">
+            <!--Individual row & column for the h1 title, col-12 takes up the entirety of the container columns wont stack when screen is smaller-->
             <div class="row">
                 <div class="col">
                     <!--h1 used to signify the most important heading of the page, display-4 used as the size used in bootstrap suits the layout-->
                     <h1 class="display-4">About Me</h1>
                 </div>
             </div>
-        </header>
+        </section>
         <!--semantic main tag to indicate the main content of the page-->
         <section class="main">
             <!--Parent row and column-->
@@ -72,7 +75,7 @@
                             <!--float left is used to float the image to the left of the row & image fluid is used to allow the image to scale when the screen is decreased-->
                             <div class="float-left pl-3 pb-3">
                                 <img src="./assets/images/me.jpg" class="align-self-start mr-3 image-fluid"
-                                    alt="Jamelea Sinclair webpage developer" height="250px">
+                                    alt="Jamelea Sinclair webpage developer UWA student" height="250px">
                                 <!--ALT tag used for SEO-->
                             </div>
                             <p> My name is Jamie. Ive dabbled in code for most of my life, completing a Certificate IV
@@ -95,16 +98,32 @@
                 </div>
             </div>
         </section>
-        <!--sementic html: footer indicates the footer of the page, where in this case copyright info is kept-->
-        <section class="footer">
-            <div class="row">
-                <!--col-12 used so the footer takes up the entirety of that row-->
-                <div class="col-lg-12">
-                    &copy; 2020 | Jamelea Sinclair
-                </div>
+    </section>
+    <!--sementic html: footer indicates the footer of the page, where in this case copyright info is kept-->
+    <footer class="footer">
+        <div class="row">
+            <!--col-4 used to put each column into equal parts-->
+            <div class="col-4"></div>
+            <div class="col-4">
+                &copy; 2020 | Jamelea Sinclair
             </div>
-        </section>
-    </div>
+            <div class="col-4">
+                <!--social media links using Awesome fonts-->
+                <a class="btn" href="https://www.facebook.com/Jaymesinn" target = "_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a class="btn" href="https://www.instagram.com/jayme_draws/?hl=en" target = "_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a class="btn" href="https://github.com/jameleasin" target = "_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a class="btn" href="https://www.linkedin.com/in/jamelea-sinclair-78137871/" target = "_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

@@ -1,6 +1,14 @@
+html {
+ min-height: 100%;
+}
+body {
+ background-image: url["me.jpg"];
+}
 .container {
     margin: 20px;
     padding: 20px;
+    background-color: rgb(226, 221, 221);
+    opacity: .9;
 }
 .navbar-brand {
     font-family: 'Roboto Slab', serif;
@@ -14,12 +22,13 @@
 }
 /*footer*/
 .footer {
-  padding-bottom: 5px;
+    padding-bottom: 5px;
     background-color: darkgrey;
     text-align: center;
-    height: 50px;
     border-top: solid #4BAAA5 5px;
     color: #079767;
+    bottom: 0;
+    width: 100%;
 }
 /*Submit button*/
 .btn {
@@ -65,6 +74,6 @@ a:hover {
     }
   }
   .row-main {
-    background-color: lightgrey;
+    background-color: rgb(226, 221, 221);
     padding: 20px;
   }
