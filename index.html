@@ -25,7 +25,7 @@
 
 <body>
     <!--semantiv navigation tag to indicate the navigation links on the page-->
-    <section class = "navigation">
+    <section class="navigation">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <!-- Our brand / logo -->
             <a class="navbar-brand" href="#">Jamelea Sinclair</a>
@@ -52,45 +52,49 @@
     </section>
     <!--container-fluid used to ensure the content of the page is responsivewhen screens pixels are adjusted-->
     <div class="container-fluid">
-        <!--Jumbotron used to showcase the key features on the webpage, in this case the about me section-->
-        <div class="jumbotron">
-            <header>
-                <!--Individual row & column for the h1 title, col-12 takes up the entirety of the container-->
-                <div class="row">
-                    <div class="col-6">
-                        <!--h1 used to signify the most important heading of the page, display-4 used as the size used in bootstrap suits the layout-->
-                        <h1 class="display-4">About Me</h1>
-                    </div>
+        <header>
+            <!--Individual row & column for the h1 title, col-12 takes up the entirety of the container-->
+            <div class="row">
+                <div class="col">
+                    <!--h1 used to signify the most important heading of the page, display-4 used as the size used in bootstrap suits the layout-->
+                    <h1 class="display-4">About Me</h1>
                 </div>
-            </header>
-            <!--semantic main tag to indicate the main content of the page-->
-            <section class="main">
-                <!--A row and column of 12 takes the entirety of the container, letting the information inside sit accross the entirety of the container-->
-                <div class="row">
-                    <div class="col-6">
-                        <!--float left is used to float the image to the left of the row & image fluid is used to allow the image to scale when the screen is decreased-->
-                        <div class="float-left pl-3 pb-3">
-                            <img src="./assets/images/me.jpg" class="align-self-start mr-3 image-fluid"
-                                alt="Jamelea Sinclair webpage developer" height="250px">
-                            <!--ALT tag used for SEO-->
+            </div>
+        </header>
+        <!--semantic main tag to indicate the main content of the page-->
+        <section class="main">
+            <!--Parent row and column-->
+            <div class="row-main">
+                <div class="col">
+                    <!--Nested row and column of 12 takes the entirety of the parent column, letting the information inside sit accross the entirety of the container-->
+                    <div class="row">
+                        <div class="col-12">
+                            <!--float left is used to float the image to the left of the row & image fluid is used to allow the image to scale when the screen is decreased-->
+                            <div class="float-left pl-3 pb-3">
+                                <img src="./assets/images/me.jpg" class="align-self-start mr-3 image-fluid"
+                                    alt="Jamelea Sinclair webpage developer" height="250px">
+                                <!--ALT tag used for SEO-->
+                            </div>
+                            <p> My name is Jamie. Ive dabbled in code for most of my life, completing a Certificate IV
+                                in Multimedia Design and I.T with a programming stream in 2013.
+                                Since then I have persude my love of animal health completing my Certificate IV in
+                                veterinary Nursing in 2017.
+                                I have moved from GP work to ECC work and have enjoyed learning in a more critical role.
+                                <br />
+                                I have decided to move back into a more creative space for work and have fallen back
+                                into
+                                programming with ease.
+                                I am very excited to learn all the new languages that have come about since 2013 and to
+                                really take my programming skills to the next level.
+                                I enjoy the front end design aspect of web development, making things asthetically
+                                pleasing
+                                and creating more interactive web applications.
+                            </p>
                         </div>
-                        <p> My name is Jamie. Ive dabbled in code for most of my life, completing a Certificate IV
-                            in Multimedia Design and I.T with a programming stream in 2013.
-                            Since then I have persude my love of animal health completing my Certificate IV in
-                            veterinary Nursing in 2017.
-                            I have moved from GP work to ECC work and have enjoyed learning in a more critical role.
-                            <br />
-                            I have decided to move back into a more creative space for work and have fallen back into
-                            programming with ease.
-                            I am very excited to learn all the new languages that have come about since 2013 and to
-                            really take my programming skills to the next level.
-                            I enjoy the front end design aspect of web development, making things asthetically pleasing
-                            and creating more interactive web applications.
-                        </p>
                     </div>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
         <!--sementic html: footer indicates the footer of the page, where in this case copyright info is kept-->
         <section class="footer">
             <div class="row">

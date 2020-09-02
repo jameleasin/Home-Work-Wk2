@@ -2,9 +2,6 @@
     margin: 20px;
     padding: 20px;
 }
-.jumbotron {
-  background-color: grey; 
-}
 .navbar-brand {
     font-family: 'Roboto Slab', serif;
     background-color: #4BAAA5;
@@ -17,11 +14,9 @@
 }
 /*footer*/
 .footer {
+  padding-bottom: 5px;
     background-color: darkgrey;
     text-align: center;
-    margin-top: 5%;
-    margin-bottom: 5px;
-    padding: 5px;
     height: 50px;
     border-top: solid #4BAAA5 5px;
     color: #079767;
@@ -40,8 +35,8 @@ a:hover {
 .row {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 4px;
-    margin: 10px;
+    padding: 10px;
+    margin: 20px,20px,0px,20px;
   }
   /*When width of screen is 992px padding is formatted to images*/
   @media (max-width: 992px) {
@@ -68,4 +63,8 @@ a:hover {
       flex: 50%;
       max-width: 50%;
     }
+  }
+  .row-main {
+    background-color: lightgrey;
+    padding: 20px;
   }

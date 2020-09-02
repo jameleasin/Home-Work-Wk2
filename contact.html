@@ -52,41 +52,42 @@
     </navigation>
     <!--container-fluid used to ensure the content of the page is responsivewhen screens pixels are adjusted-->
     <div class="container-fluid">
-        <!--Jumbotron used to showcase the key features on the webpage, in this case the contact form(after researching I have found that jumbotron is used in practice and wanted to start using it early on to familiarise myself-->
-        <div class="jumbotron">
-            <!--Individual row & column for the h1 title, col-12 takes up the entirety of the container-->
-            <div class="row">
-                <div class="col-lg-12">
-                    <section class="header">
-                        <!--h1 used to signify the most important heading of the page, display-4 used as the size used in bootstrap suits the layout-->
-                        <h1 class="display-4">Contact</h1>
-                    </section>
-                    <!--semantic main tag to indicate the main content of the page-->
-                    <section class="main">
-                        <div class="row">
-                            <div class="col-8">
-                                <form>
-                                    <div class="form-group">
-                                        <label for="exampleFormControlInput1">Name</label>
-                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"
-                                            placeholder="Full name"></textarea>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="exampleFormControlInput1">Email address</label>
-                                        <input type="email" class="form-control" id="exampleFormControlInput2"
-                                            placeholder="name@example.com">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="exampleFormControlTextarea1">Message</label>
-                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-                                            placeholder="Type your message here..."></textarea>
-                                    </div>
-                                    <input class="btn btn-lg" type="submit" value="Submit">
-                                </form>
+        <!--Individual row & column for the h1 title, col-12 takes up the entirety of the container-->
+        <div class="row">
+            <div class="col-lg-12">
+                <section class="header">
+                    <!--h1 used to signify the most important heading of the page, display-4 used as the size used in bootstrap suits the layout-->
+                    <h1 class="display-4">Contact</h1>
+                </section>
+                <!--semantic main tag to indicate the main content of the page-->
+                <section class="main">
+                    <div class="row-main">
+                        <div class="col">
+                            <div class="row">
+                                <div class="col-8">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="exampleFormControlInput1">Name</label>
+                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"
+                                                placeholder="Full name"></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleFormControlInput1">Email address</label>
+                                            <input type="email" class="form-control" id="exampleFormControlInput2"
+                                                placeholder="name@example.com">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleFormControlTextarea1">Message</label>
+                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                                placeholder="Type your message here..."></textarea>
+                                        </div>
+                                        <input class="btn btn-lg" type="submit" value="Submit">
+                                    </form>
+                                </div>
                             </div>
                         </div>
-                    </section>
-                </div>
+                    </div>
+                </section>
             </div>
         </div>
         <!--semantic html: footer indicates the footer of the page, where in this case copyright info is kept-->
