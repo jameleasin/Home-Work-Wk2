@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="eng">
+
 <head>
     <meta charset="UTF-8">
     <title>Contact</title>
@@ -21,9 +22,10 @@
     <!--Google Fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <!--semantiv navigation tag to indicate the navigation links on the page-->
-    <navigation>
+    <section class="navigation">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <!-- Our brand / logo -->
             <a class="navbar-brand" href="#">Jamelea Sinclair</a>
@@ -46,54 +48,57 @@
                     </li>
                 </ul>
             </div>
-        </nav>
+    </section>
     </navigation>
-    <div class="container">
+    <!--container-fluid used to ensure the content of the page is responsivewhen screens pixels are adjusted-->
+    <div class="container-fluid">
         <!--Jumbotron used to showcase the key features on the webpage, in this case the contact form(after researching I have found that jumbotron is used in practice and wanted to start using it early on to familiarise myself-->
         <div class="jumbotron">
             <!--Individual row & column for the h1 title, col-12 takes up the entirety of the container-->
             <div class="row">
-                <div class="col-12">
-                    <header>
+                <div class="col-lg-12">
+                    <section class="header">
                         <!--h1 used to signify the most important heading of the page, display-4 used as the size used in bootstrap suits the layout-->
                         <h1 class="display-4">Contact</h1>
-                    </header>
+                    </section>
                     <!--semantic main tag to indicate the main content of the page-->
-                    <main>
-                        <form>
-                            <div class="form-group">
-                                <label for="exampleFormControlInput1">Name</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"
-                                    placeholder="Full name"></textarea>
+                    <section class="main">
+                        <div class="row">
+                            <div class="col col-6 col">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput1">Name</label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"
+                                            placeholder="Full name"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput1">Email address</label>
+                                        <input type="email" class="form-control" id="exampleFormControlInput2"
+                                            placeholder="name@example.com">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlTextarea1">Message</label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                            placeholder="Type your message here..."></textarea>
+                                    </div>
+                                    <input class="btn btn-lg" type="submit" value="Submit">
+                                </form>
                             </div>
-                            <div class="form-group">
-                                <label for="exampleFormControlInput1">Email address</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput2"
-                                    placeholder="name@example.com">
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleFormControlTextarea1">Message</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-                                    placeholder="Type your message here..."></textarea>
-                            </div>
-                            <input class="btn btn-lg" type="submit" value="Submit">
-                        </form>
-                    </main>
+                        </div>
+                    </section>
                 </div>
             </div>
         </div>
-        <!--semantic footer tag to indicate the footer of the page-->
-        <footer>
-            <!--class = footer indicates the footer of the page, where in this case copyright info is kept-->
-            <div class="footer">
-                <div class="row">
-                    <!--col-12 used so the footer takes up the entirety of that row-->
-                    <div class="col-lg-12">
-                        &copy; 2020 | Jamelea Sinclair
-                    </div>
+        <!--semantic html: footer indicates the footer of the page, where in this case copyright info is kept-->
+        <section class="footer">
+            <div class="row">
+                <!--col-12 used so the footer takes up the entirety of that row-->
+                <div class="col-lg-12">
+                    &copy; 2020 | Jamelea Sinclair
                 </div>
             </div>
-        </footer>
+        </section>
     </div>
 </body>
+
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="eng">
+
 <head>
     <meta charset="UTF-8">
     <title>About Me</title>
@@ -21,9 +22,10 @@
     <!--Google Fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <!--semantiv navigation tag to indicate the navigation links on the page-->
-    <navigation>
+    <section class = "navigation">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <!-- Our brand / logo -->
             <a class="navbar-brand" href="#">Jamelea Sinclair</a>
@@ -38,39 +40,39 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="index.html">About Me <span class="sr-only">(current)</span></a>
                     </li>
-
                     <li class="nav-item">
                         <a class="nav-link" href="portfolio.html">Portfolio</a>
                     </li>
-
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
         </nav>
-    </navigation>
-    <div class="container">
+    </section>
+    <!--container-fluid used to ensure the content of the page is responsivewhen screens pixels are adjusted-->
+    <div class="container-fluid">
         <!--Jumbotron used to showcase the key features on the webpage, in this case the about me section-->
         <div class="jumbotron">
             <header>
                 <!--Individual row & column for the h1 title, col-12 takes up the entirety of the container-->
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-6">
                         <!--h1 used to signify the most important heading of the page, display-4 used as the size used in bootstrap suits the layout-->
                         <h1 class="display-4">About Me</h1>
                     </div>
                 </div>
             </header>
             <!--semantic main tag to indicate the main content of the page-->
-            <main>
+            <section class="main">
                 <!--A row and column of 12 takes the entirety of the container, letting the information inside sit accross the entirety of the container-->
                 <div class="row">
-                    <div class="col-lg-12">
+                    <div class="col-6">
                         <!--float left is used to float the image to the left of the row & image fluid is used to allow the image to scale when the screen is decreased-->
                         <div class="float-left pl-3 pb-3">
                             <img src="./assets/images/me.jpg" class="align-self-start mr-3 image-fluid"
-                                alt="Jamelea Sinclair webpage developer" height="250px"><!--ALT tag used for SEO-->
+                                alt="Jamelea Sinclair webpage developer" height="250px">
+                            <!--ALT tag used for SEO-->
                         </div>
                         <p> My name is Jamie. Ive dabbled in code for most of my life, completing a Certificate IV
                             in Multimedia Design and I.T with a programming stream in 2013.
@@ -87,20 +89,18 @@
                         </p>
                     </div>
                 </div>
-            </main>
+            </section>
         </div>
-        <!--semantic footer tag to indicate the footer of the page-->
-        <footer>
-            <!--class = footer indicates the footer of the page, where in this case copyright info is kept-->
-            <div class="footer">
-                <div class="row">
-                    <!--col-12 used so the footer takes up the entirety of that row-->
-                    <div class="col-lg-12">
-                        &copy; 2020 | Jamelea Sinclair
-                    </div>
+        <!--sementic html: footer indicates the footer of the page, where in this case copyright info is kept-->
+        <section class="footer">
+            <div class="row">
+                <!--col-12 used so the footer takes up the entirety of that row-->
+                <div class="col-lg-12">
+                    &copy; 2020 | Jamelea Sinclair
                 </div>
             </div>
-        </footer>
+        </section>
     </div>
 </body>
+
 </html>
