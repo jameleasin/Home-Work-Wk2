@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="eng">
-
 <head>
     <meta charset="UTF-8">
     <title>Portfolio</title>
@@ -9,7 +8,7 @@
     <!--Bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!--JS components-->
+    <!--JS & jQuery components to make the hamburger menu interactive-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
@@ -22,72 +21,79 @@
     <!--Google Fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
 </head>
-
 <body>
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-
-        <!-- Our brand / logo -->
-        <a class="navbar-brand" href="#">Jamelea Sinclair</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Collapsible button -->
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav ml-auto">
-
-                <!-- The links of our navbar -->
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">About Me </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link active" href="portfolio.html">Portfolio <span
-                            class="sr-only">(current)</span></a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    <!--semantiv navigation tag to indicate the navigation links on the page-->
+    <navigation>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <!-- Our brand / logo -->
+            <a class="navbar-brand" href="#">Jamelea Sinclair</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Collapsible button -->
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <!-- The links of our navbar -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">About Me </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="portfolio.html">Portfolio<span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </navigation>
     <div class="container">
+        <!--Jumbotron used to showcase the key features on the webpage, in this case the portfolio-->
         <div class="jumbotron">
-            <div class="row">
-                <div class="col-md-4">
-                    <h1 class="display-4">Portfolio</h1>
+            <header>
+                <!--Individual row & column for the h1 title, col-12 takes up the entirety of the container-->
+                <div class="row">
+                    <div class="col-md-4">
+                        <!--h1 used to signify the most important heading of the page, display-4 used as the size used in bootstrap suits the layout-->
+                        <h1 class="display-4">Portfolio</h1>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <img src="http://placehold.it/350x350" class="mr-3 image-fluid" alt="Portfolio 1">
-                    <img src="http://placehold.it/350x350" class="mr-3 image-fluid" alt="Portfolio 2">
+            </header>
+            <!--semantic main tag to indicate the main content of the page-->
+            <main>
+                <div class="row">
+                    <div class="col-12">
+                        <img src="http://placehold.it/350x350" class="mr-3 image-fluid" alt="Portfolio 1"><!--alt text in order of portfolio order on page-->
+                        <img src="http://placehold.it/350x350" class="mr-3 image-fluid" alt="Portfolio 2">
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <img src="http://placehold.it/350x350" class="mr-3 image-fluid" alt="Portfolio 1">
-                    <img src="http://placehold.it/350x350" class="mr-3 image-fluid" alt="Portfolio 2">
+                <div class="row">
+                    <div class="col-12">
+                        <img src="http://placehold.it/350x350" class="mr-3 image-fluid" alt="Portfolio 3">
+                        <img src="http://placehold.it/350x350" class="mr-3 image-fluid" alt="Portfolio 4">
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <img src="http://placehold.it/350x350" class="mr-3 image-fluid" alt="Portfolio 1">
+                <div class="row">
+                    <div class="col-12">
+                        <img src="http://placehold.it/350x350" class="mr-3 image-fluid" alt="Portfolio 5">
+                    </div>
                 </div>
-            </div>
         </div>
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="footer">
-                    &copy; 2020 | Jamelea Sinclair
+    </main>
+        <!--semantic footer tag to indicate the footer of the page-->
+        <footer>
+            <!--class = footer indicates the footer of the page, where in this case copyright info is kept-->
+            <div class="footer">
+                <div class="row">
+                    <!--col-12 used so the footer takes up the entirety of that row-->
+                    <div class="col-lg-12">
+                        &copy; 2020 | Jamelea Sinclair
+                    </div>
                 </div>
             </div>
-        </div>
+        </footer>
     </div>
-
 </body>
-
 </html>

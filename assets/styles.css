@@ -10,16 +10,18 @@
     background-color: #4BAAA5;
     padding: 10px;
 }
+/*Headers*/
 .display-4 {
     font-family: 'Roboto Slab', serif;
     color: #4BAAA5;
 }
+/*footer*/
 .footer {
     background-color: darkgrey;
     text-align: center;
     margin-top: 5%;
     margin-bottom: 5px;
-    padding: 15px;
+    padding: 5px;
     height: 50px;
     border-top: solid #4BAAA5 5px;
     color: #079767;
@@ -41,6 +43,7 @@ a:hover {
     padding: 0 4px;
     margin: 10px;
   }
+  /*When width of screen is 992px padding is formatted to images*/
   @media (max-width: 992px) {
     img {
          padding-bottom: 10px;
