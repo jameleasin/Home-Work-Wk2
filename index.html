@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -27,36 +27,34 @@
 
 <body>
     <!--semantiv navigation tag to indicate the navigation links on the page-->
-    <section class="navigation">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <!-- Our brand / logo -->
-            <a class="navbar-brand" href="#">Jamelea Sinclair</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <!-- Collapsible button -->
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav ml-auto">
-                    <!-- The links of our navbar -->
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">About Me <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="portfolio.html">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </section>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <!-- Our brand / logo -->
+        <a class="navbar-brand" href="#">Jamelea Sinclair</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Collapsible button -->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <!-- The links of our navbar -->
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">About Me <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
     <!--sementic html: container-fluid used to ensure the content of the page is responsivewhen screens pixels are adjusted-->
     <section class="container container-fluid">
         <!--Semantic HTML to indicate the header of the page-->
         <section class="header">
-            <!--Individual row & column for the h1 title, col-12 takes up the entirety of the container columns wont stack when screen is smaller-->
+            <!--Individual row & column for the h1 title, col takes up the entirety of the container columns wont stack when screen is smaller-->
             <div class="row">
                 <div class="col">
                     <!--h1 used to signify the most important heading of the page, display-4 used as the size used in bootstrap suits the layout-->
@@ -69,16 +67,16 @@
             <!--Parent row and column-->
             <div class="row-main">
                 <div class="col">
-                    <!--Nested row and column of 12 takes the entirety of the parent column, letting the information inside sit accross the entirety of the container-->
+                    <!--Nested row and column takes the entirety of the parent column, letting the information inside sit accross the entirety of the container-->
                     <div class="row">
-                        <div class="col-12">
+                        <div class="col">
                             <!--float left is used to float the image to the left of the row & image fluid is used to allow the image to scale when the screen is decreased-->
                             <div class="float-left pl-3 pb-3">
                                 <img src="./assets/images/me.jpg" class="align-self-start mr-3 image-fluid"
                                     alt="Jamelea Sinclair webpage developer UWA student" height="250px">
                                 <!--ALT tag used for SEO-->
                             </div>
-                            <p> My name is Jamie. Ive dabbled in code for most of my life, completing a Certificate IV
+                            <p> My name is Jamie. I've dabbled in code for most of my life, completing a Certificate IV
                                 in Multimedia Design and I.T with a programming stream in 2013.
                                 Since then I have persude my love of animal health completing my Certificate IV in
                                 veterinary Nursing in 2017.
@@ -101,24 +99,26 @@
     </section>
     <!--sementic html: footer indicates the footer of the page, where in this case copyright info is kept-->
     <footer class="footer">
+        <!--col-4 used to put each column into equal parts-->
+
         <div class="row">
-            <!--col-4 used to put each column into equal parts-->
-            <div class="col-4"></div>
-            <div class="col-4">
+            <div class="col-sm-4">
+            </div>
+            <div class="col-sm-4">
                 &copy; 2020 | Jamelea Sinclair
             </div>
-            <div class="col-4">
+            <div class="col-sm-4">
                 <!--social media links using Awesome fonts-->
-                <a class="btn" href="https://www.facebook.com/Jaymesinn" target = "_blank">
+                <a class="btn" href="https://www.facebook.com/Jaymesinn" target="_blank">
                     <i class="fab fa-facebook-f"></i>
                 </a>
-                <a class="btn" href="https://www.instagram.com/jayme_draws/?hl=en" target = "_blank">
+                <a class="btn" href="https://www.instagram.com/jayme_draws/?hl=en" target="_blank">
                     <i class="fab fa-instagram"></i>
                 </a>
-                <a class="btn" href="https://github.com/jameleasin" target = "_blank">
+                <a class="btn" href="https://github.com/jameleasin" target="_blank">
                     <i class="fab fa-github"></i>
                 </a>
-                <a class="btn" href="https://www.linkedin.com/in/jamelea-sinclair-78137871/" target = "_blank">
+                <a class="btn" href="https://www.linkedin.com/in/jamelea-sinclair-78137871/" target="_blank">
                     <i class="fab fa-linkedin"></i>
                 </a>
             </div>
